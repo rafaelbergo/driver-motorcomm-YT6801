@@ -1,12 +1,12 @@
-## Instalacao de driver de rede Motorcomm YT6801 no mini pc MLLSE N3350 6GB RAM UTILIZANDO UBUNTU SERVER
+## Instalacao de driver de rede Motorcomm YT6801 no mini pc MLLSE N3350 6GB RAM utilizando UBUNTU SERVER 24.04
 
-# Instalacao do driver
+# Instalação do driver
 
 sudo apt update
 
 sudo apt install build-essential
 
-git clone http://link
+git clone https://github.com/rafaelbergo/driver-motorcomm-YT6801.git
 
 sudo apt install build-essential
 
@@ -16,7 +16,7 @@ cd src/
 
 ./yt_nic_install.sh
 
-# Configuracao da interface de rede
+# Configuração da interface de rede
 
 cd /etc/netplan/
 
@@ -47,4 +47,5 @@ network:
                     - 1.0.0.1
 ```
 
+sudo netplan apply
 
