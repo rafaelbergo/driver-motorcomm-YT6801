@@ -12,8 +12,6 @@ sudo apt install build-essential
 
 sudo su
 
-cd src/
-
 ./yt_nic_install.sh
 
 # Configuração da interface de rede
